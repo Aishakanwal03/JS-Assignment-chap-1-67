@@ -249,6 +249,16 @@
 
 // Question # 3
 
+// var index , table = document.getElementById("table")
+// for (i = 1 ; i < table.rows.length ; i++){
+//     table.rows[i].cells[3].onclick = function(){
+//         index = this.parentElement.rowIndex
+//         table.deleteRow(index)
+//         for (i = 1 ; i < table.rows.length ; i++){
+//             table.rows[i].cells[0].innerHTML = i
+//         }
+//     }
+// }
 
 
 // Question # 4
@@ -283,9 +293,154 @@
 
 // Question # 1
 
-function para(){
 
-var para = document.getElementById("para")
+// function content(){
+//     var name = document.getElementById("name").value
+//     var email = document.getElementById("email").value
+//     var password = document.getElementById("pswd").value
+//     document.write("Name: "  + name+ "<br>")
+//     document.write("Email: " + email + "<br>")
+//     document.write("password: " + password + "<br>")    
 
-para.innerHTML = " In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details and show each student detail in table. Each row of table must contain a delete button and an edit button. On click on delete button entire row should be deleted. On click on edit button, a hidden form will appear with the values of that row."
-}
+// }
+
+// Question # 2
+
+// function para(){
+
+// var para = document.getElementById("para")
+
+// para.innerHTML = " In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details and show each student detail in table. Each row of table must contain a delete button and an edit button. On click on delete button entire row should be deleted. On click on edit button, a hidden form will appear with the values of that row."
+
+// var link = document.getElementById("link")
+
+// link.innerHTML = "read less"
+// }
+
+// Question # 3
+
+// var selectedRow = null
+
+// function onSubmit(){
+//     var formData = getFormData()
+//     if(selectedRow == null){
+//     insertNewRecord(formData)
+//     }else{
+//         updateRecord(formData)
+//     }
+//     resetForm()
+// }
+// function getFormData(){
+//     var formData = {}
+//     formData["name"] = document.getElementById("name").value
+//     formData["class"] = document.getElementById("class").value
+//     return formData
+// }
+
+// function insertNewRecord(data){
+//     var table = document.getElementById("table")
+//     var newRow = table.insertRow(table.length)
+//     var cell0 = newRow.insertCell(0)
+//     cell0.innerHTML = table.rows.length -1
+//     var cell1 = newRow.insertCell(1)
+
+//     cell1.innerHTML = data.name
+//     var cell2 = newRow.insertCell(2)
+//     cell2.innerHTML = data.class
+//     var cell3 = newRow.insertCell(3)
+//     cell3.innerHTML = "<button onclick = 'onEdit(this)'>Edit</button> <button onclick = 'onDelete(this)'>Delete</button>"
+    
+// }
+
+// function resetForm(){
+//     document.getElementById("name").value = ""
+//     document.getElementById("class").value = ""
+//     selectedRow = null
+// }
+// function onEdit(td){
+//     selectedRow = td.parentElement.parentElement
+//     document.getElementById("name").value = selectedRow.cells[1].innerHTML
+//     document.getElementById("class").value = selectedRow.cells[2].innerHTML
+// }
+// function updateRecord(formData){
+//     selectedRow.cells[1].innerHTML = formData.name
+//     selectedRow.cells[2].innerHTML = formData.class
+// }
+// function onDelete(td){
+//     row = td.parentElement.parentElement
+//     document.getElementById("table").deleteRow(row.rowIndex)
+//     for (i = 1 ; i < table.rows.length ; i++){
+//         table.rows[i].cells[0].innerHTML = i
+//     }
+//     resetForm()
+// }
+
+
+// *****CHAPTER 58 - 67*****
+
+// Question # 1
+// part # 1
+
+// var main = document.getElementById("main-content")
+
+// part # 2
+
+// var main = document.getElementById("main-content")
+// console.log(main.childNodes) 
+
+// part # 3
+
+// var main = document.getElementById("main-content")
+// var child = main.innerHTML
+// var text = main.textContent
+// console.log(text)
+
+// part # 4
+
+// var firstNmae = document.getElementById("first-name").value = "Aasma"
+
+// // part # 5
+
+// var lastName = document.getElementById("last-name").value = "Kanwal"
+// var email= document.getElementById("email").value = "aasmakanwal921@gmail.com"
+
+// Question # 2
+// part # 1
+
+// var fo = document.getElementById("form-content").nodeType
+// alert(fo)
+
+// part # 2
+
+var lastName = document.getElementById("last-name")
+alert(lastName.nodeType)
+var child = lastName.childNodes
+alert(child.nodeType)
+
+// part # 3
+
+// var lastname = document.getElementById("last-name").value = "Batool"
+
+// part # 4
+
+// var main = document.getElementById("main-content")
+//  var first = main.firstChild
+// console.log(first)
+// var last  = main.lastChild
+// console.log(last)
+
+// part # 5
+
+// var lastName = document.getElementById("last-name")
+// var previus = lastName.previousSibling
+// console.log(previus)
+
+// var next = lastName.nextSibling
+// console.log(next)
+
+// part # 6
+
+// var email = document.getElementById("email")
+// console.log(email.nodeType)
+// var parent = email.parentNode
+// console.log(parent)
